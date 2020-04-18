@@ -1,0 +1,124 @@
+/* pages/details/details.wxss */
+/* details_top */
+.details_infos{
+  height: 360rpx;
+  width:100%;
+  display: flex;
+  position: relative;
+  box-sizing: border-box;
+  padding: 30rpx;
+  display: flex;
+  overflow: hidden;
+}
+.details_top_info{
+  display: flex;
+  height:100%;
+}
+.details_top{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top:0;
+  left:0;
+  filter: blur(25rpx);
+  z-index: -1;
+}
+.details_info_img{
+  width:219.96rpx;
+  height:300rpx;
+  margin-right: 30rpx;
+}
+.details_info_img image{
+  width:219.96rpx;
+  height:300rpx;
+}
+.details_info_infos{
+  color:#fff;
+  height:100%;
+  font-size:32rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+.details_info_infos view:nth-of-type(2){
+  font-weight:900
+}
+.details_content{
+  width: 100%;
+  height: auto;
+  background-color: #eee;
+}
+/* details_local */
+.details_local{
+  width:100%;
+  height:222rpx;
+  box-sizing: border-box;
+  padding:43rpx 30rpx;
+  background-color: #fff;
+}
+.details_local_time{
+  height:32rpx;
+  color:#232323;
+  font-size:36rpx;
+}
+.details_local_position{
+  height:81rpx;
+  width:100%;
+  margin-top:30rpx;
+}
+.details_local_position view:nth-of-type(2){
+  color:#666;
+  font-size:24rpx;
+  margin-top:15rpx;
+}
+/* details_desc */
+.details_desc{
+  height:188rpx;
+  width: 100%;
+  margin-top:20rpx;
+  background-color: #fff;
+  margin-bottom: 30rpx;
+}
+.details_desc .details_each{
+  display: flex;
+  align-items: center;
+  height:94rpx;
+  width:100%;
+  box-sizing: border-box;
+  padding:23rpx 22rpx;
+  border-bottom: 1px solid #eee;
+}
+.details_desc .details_each .details_lable{
+  width:90rpx;
+  height:100%;
+  font-size:28rpx;
+  color:#999;
+  line-height: 50rpx;
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: space-between;
+  margin-right:20rpx;
+}
+.details_tips{
+  color:#232323;
+  font-size:26rpx;
+}
+.details_tips_color{
+  color:#ff6743;
+  margin-left:10rpx;
+}
+/* details_detailInfo */
+.details_detailInfo{
+  width:100%;
+  height:1266.96rpx;
+  background-color: #fff;
+  box-sizing: border-box;
+  padding:0 30rpx;
+}
+.details_detailInfo_title{
+  height:48rpx;
+  padding-top:33rpx;
+  color:#232323;
+  font-size:36rpx;
+}

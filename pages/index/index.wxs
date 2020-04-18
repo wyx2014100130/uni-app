@@ -1,0 +1,11 @@
+function timer(time){
+  return time.split(" ")[0]
+}
+function excludeData(date){
+  var time=date.split(" ")[0];
+  return time.split("2020.")[1]
+}
+module.exports={
+  timer:timer,
+  excludeData:excludeData
+}

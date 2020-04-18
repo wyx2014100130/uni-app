@@ -1,0 +1,51 @@
+<!--pages/city/city.wxml-->
+<view class="city">
+<scroll-view scroll-y="true" scroll-into-view="{{target}}">
+ <view>
+   <view class="city_position">
+    <view class="city_position_title"  id="now">
+      <text>定位城市</text>
+    </view>
+    <text class="city_position_localtion">定位失败，点击重试</text>
+  </view>
+  <view class="city_hotCity">
+    <view id="hot">
+      <text>热门城市</text>
+    </view>
+    <ul>
+    <li data-id="0" data-name="全国"  bindtap="handleBack">全国</li>
+      <block wx:for="{{hot_city_List}}" wx:key="id">
+        <li data-id="{{item.id}}" data-name="{{item.name}}" data-Abbreviation="{{item.Abbreviation}}" bindtap="handleBack"  >{{item.name}}</li>
+      </block>
+    </ul>
+  </view>
+  <view class="city_all">
+    <block wx:for="{{city_all}}" wx:for-index="key" wx:for-item="value">
+      <view class="city_all_content">
+        <view class="city_all_contentTitle" id="{{key}}">
+          <text>{{key}}</text>
+        </view>
+        <view class="city_all_contentList">
+          <block wx:for="{{value.list}}" wx:key="index">
+            <view class="{{index==(value.list.length)-1?'lastIndex':''}}" data-id="{{item.id}}"
+                        data-name="{{item.name}}" data-Abbreviation="{{item.Abbreviation}}" bindtap="handleBack" 
+            >
+              <text>{{item.name}}</text>
+            </view>
+          </block>
+        </view>
+      </view>
+    </block>
+  </view>
+ </view>
+ </scroll-view>
+   <view class="city_tags">
+    <ul bind:touchstart="handleTouchStart" bind:touchmove="handleTouchMove">
+      <li data-id="now" class="{{activeTag=='now'?'tag_active':''}}">定位</li>
+      <li data-id="hot" class="{{activeTag=='hot'?'tag_active':''}}">热门</li>
+      <block wx:for="{{city_all}}" wx:key="index">
+        <li data-id="{{index}}" class="{{activeTag==index?'tag_active':''}}">{{index}}</li>
+      </block>
+    </ul>
+  </view>
+</view>

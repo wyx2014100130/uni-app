@@ -1,0 +1,63 @@
+<!--pages/details/details.wxml-->
+<view class="container">
+    <view class="details_infos">
+      <view class="details_top" style="background:url('{{static_data.share_data.share_pic}}') !important"> 
+      </view>
+      <view class="details_top_info">
+        <view class="details_info_img">
+            <image src="{{static_data.share_data.share_pic}}" />
+        </view>
+        <view class="details_info_infos">
+          <view>
+            <text>{{static_data.share_data.share_title}}</text>
+          </view>
+          <view>
+            <text>￥{{static_data.static_data.price_range}}</text>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="details_content">
+       <view class="details_local">
+        <view class="details_local_time">
+          <text>{{time}}</text>
+        </view>
+        <view class="details_local_position">
+          <view>
+            <text>{{static_data.static_data.city.city_name}} | </text>
+            <text>{{static_data.static_data.venue.venue_name}} </text>
+          </view>
+          <view>
+            <text>{{static_data.static_data.venue.venue_address}} </text>
+          </view>
+        </view>
+       </view>
+       <view class="details_desc">
+        <view class="details_each">
+            <view class="details_lable">
+                <text>VIP </text>
+                <text>:</text>
+            </view>
+            <view class="details_tips">
+              <text>V+会员享</text>
+              <text class="details_tips_color">国内免邮 + 双倍积分</text>
+            </view>
+        </view>
+        <view class="details_each">
+            <view class="details_lable">
+              <text>入场  </text>
+              <text> :</text>
+            </view>
+             <view class="details_tips">
+              <text>一人一票，凭票入场</text>
+            </view>
+        </view>
+       </view>
+       <view class="details_detailInfo">
+        <view class="details_detailInfo_title">
+          <text>演出介绍</text>
+        </view>
+        {{static_data.static_data.important_note}}
+       </view>
+    </view>
+</view>

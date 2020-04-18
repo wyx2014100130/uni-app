@@ -1,0 +1,121 @@
+/* pages/city/city.wxss */
+.city{
+  background-color: #eee;
+  height:100%;
+  overflow: scroll;
+}
+scroll-view{
+  height: 100% !important;
+}
+/* city_position */
+.city .city_position{
+  height:160.96rpx;
+  width:100%;
+  box-sizing: border-box;
+  padding:26rpx 80rpx 0 30rpx;
+}
+.city_position .city_position_title{
+  height:53rpx;
+  color:#999;
+  font-size:24rpx;
+  margin-bottom: 10rpx;
+}
+
+.city_position  .city_position_localtion{
+  font-size:26rpx;
+  color:#232323;
+  box-sizing: border-box;
+  padding: 15rpx 15rpx;
+  background-color: #fff;
+}
+
+/* city_hotCity */
+.city_hotCity{
+  box-sizing: border-box;
+  padding:26rpx 76rpx 0 30rpx;
+  width:100%;
+}
+.city_hotCity ul{
+  width:100%;
+  height:100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.city_hotCity ul li{
+  width:204rpx;
+  height: 73.96rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 26rpx;
+  color:#232323;
+  background-color: white;
+ 
+}
+.city_hotCity view {
+  height:53rpx;
+  width:100%;
+  font-size: 24rpx;
+  color:#999;
+  line-height: 53rpx;
+  margin-bottom:10rpx;
+}
+.city_hotCity ul li{
+  margin:0 15rpx 15rpx 0;
+}
+.city_hotCity ul li:nth-of-type(3n){
+  margin-right: 0;
+}
+.city_all{
+  width:100%;
+}
+.city_all .city_all_content .city_all_contentTitle{
+  padding-left:30rpx;
+  height:57.96rpx;
+  line-height: 57.96rpx;
+  width:100%;
+  background-color: #eee;
+  font-size:26rpx;
+  color:#999;
+}
+.city_all .city_all_content .city_all_contentList{
+  width:100%;
+  height: auto;
+  box-sizing: border-box;
+  padding:0 85rpx 0 30rpx;
+  background-color: white;
+}
+.city_all .city_all_content .city_all_contentList view{
+  height: 101.96rpx;
+  line-height: 101.96rpx;
+  color:#232323;
+  font-size:26rpx;
+  border-bottom: 2rpx solid #ebebeb ;
+}
+.city_all .city_all_content .city_all_contentList .lastIndex{
+  border-bottom: none;
+}
+.city_tags{
+  position: absolute;
+  right:10rpx;
+  top:100rpx;
+  width:48rpx;
+  height:858rpx;
+}
+.city_tags ul{
+  width:100%;
+  height:100%;
+  display: flex;
+  flex-direction: column;
+}
+.city_tags ul li{
+  width:100%;
+  height: 28rpx;
+  font-size:24rpx;
+  color:#666;
+  text-align: center;
+  margin-bottom: 6rpx;
+}
+.tag_active{
+  color:#ff6743 !important;
+}
